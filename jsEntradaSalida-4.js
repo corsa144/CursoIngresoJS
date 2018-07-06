@@ -4,6 +4,8 @@
 */
 function mostrar()
 {
-	
+	var nombre;
+	PROMPT=document.getElementById("harry");
+	alert("harry");
 }
 
