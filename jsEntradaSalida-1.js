@@ -5,7 +5,7 @@ function mostrar()
 	
 	nombre=document.getElementsByTagName('esto funciona de maravilla');
 	
-	alert(nombre);
+	alert('esto funciona de maravilla');
 
 }
 
