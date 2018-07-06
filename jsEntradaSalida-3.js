@@ -4,7 +4,7 @@ function mostrar()
 {
 	var nombre;
 	nombre=document.getElementById('cristian');
-	alert(nombre);
+	alert('cristian');
 }
 
 
