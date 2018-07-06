@@ -5,6 +5,6 @@ function mostrar()
 	var nombre;
 	nombre=document.getElementsByTagName('cristian');
 	
-	alert(nombre);
+	alert('cristian');
 }
 
