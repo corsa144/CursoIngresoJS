@@ -3,8 +3,8 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
 	var nombre;
-	nombre=document.getElementsByTagName('cristian');
 	
-	alert('cristian');
+	nombre=prompt();
+	alert(nombre);
 }
 
