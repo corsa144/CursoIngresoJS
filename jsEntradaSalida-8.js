@@ -8,8 +8,8 @@ function SacarResto()
 	var divisor;
 	var resultado;
 	
-	dividendo=document.getElementById('dividendo');
-	divisor=document.getElementById('divisor');
+	dividendo=document.getElementById('numeroDividendo').value;
+	divisor=document.getElementById('numeroDivisor').value;
 	resultado=(dividendo%divisor);
 	alert(resultado);
 }
