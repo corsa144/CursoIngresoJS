@@ -9,14 +9,64 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 function CalcularPrecio () 
-{
- 	if(lamparitas>=6)
-}
-{
-	
-	var precio
-	var cantidadDeLamparitas
+{	
+	var marca;
+	var cantidadDeLamparitas;
+	var precio=35;
+	var precioFinal;
+	var ingresosBrutos;
 
-	cantidaDeLampritas=document.getElementById('Cantidad').value;
-	precio=(cantideadDeLamparitas*35*0.5)
+	marca=document.getElementById('Marca').value;
+	cantidadDeLamparitas=document.getElementById('Cantidad').value;
+	cantidadDeLamparitas=parseInt(cantidadDeLamparitas);
+
+ 	if(cantidadDeLamparitas>=6)
+ 	{
+ 		precioFinal=(cantidadDeLamparitas*0.5*precio);
+ 	}
+ 	else if(cantidadDeLamparitas==5&&marca=="ArgentinaLuz")
+ 	{
+ 		precioFinal=(5*0.6*precio);
+ 	}
+ 	else if(cantidadDeLamparitas==5)
+ 	{
+ 		precioFinal=(5*0.7*precio);
+ 	}
+ 	else if(cantidadDeLamparitas==4&&(marca=="ArgentinaLuz"||marca=="FelipeLamparas"))
+ 	{
+ 		precioFinal=(4*0.75*precio);
+ 	}
+ 	else if(cantidadDeLamparitas==4)
+ 	{
+ 		precioFinal=(4*0.8*precio);
+ 	}
+ 	else if(cantidadDeLamparitas==3&&marca=="ArgentinaLuz")
+ 	{
+ 		precioFinal=(3*0.85*precio);
+ 	}
+ 	else if(cantidadDeLamparitas==3&&marca=="FelipeLamparas")
+ 	{
+ 		precioFinal=(3*0.9*precio);
+ 	}
+ 	else if(cantidadDeLamparitas==3)
+ 	{
+ 		precioFinal=(3*0.95*precio);
+ 	}
+ 	else
+ 	{
+ 		precioFinal=(cantidadDeLamparitas*precio);
+ 	}
+
+ 	if(precioFinal>120)
+ 	{
+ 		ingresosBrutos=precioFinal*0.1;
+ 		document.getElementById('precioDescuento').value=precioFinal;
+ 		alert(" usted pago " + ingresosBrutos + " de IIBB ");
+ 	}
+ 	else
+ 	{
+ 		document.getElementById('precioDescuento').value=precioFinal;
+ 	}
+
 }
+
