@@ -15,12 +15,15 @@ function CalcularPrecio ()
 	var precio=35;
 	var precioFinal;
 	var ingresosBrutos;
+	var descuento;
 
 	marca=document.getElementById('Marca').value;
 	cantidadDeLamparitas=document.getElementById('Cantidad').value;
 	cantidadDeLamparitas=parseInt(cantidadDeLamparitas);
+	descuento=1
+	precioFinal=precio*descuento;
 
- 	if(cantidadDeLamparitas>=6)
+ 	/* if(cantidadDeLamparitas>=6)
  	{
  		precioFinal=(cantidadDeLamparitas*0.5*precio);
  	}
@@ -66,7 +69,25 @@ function CalcularPrecio ()
  	else
  	{
  		document.getElementById('precioDescuento').value=precioFinal;
+ 	} */
+ 	switch(cantidadDeLamparitas)
+ 	{
+ 		case 1:
+ 		case 2:
+ 			precioFinal=precio*1;
+ 			break;
+ 		case 3:
+ 			switch(marca)
+ 			{
+ 				case 1:
+ 				precioFinal=precio*0.85;
+ 				case 2:
+ 				precioFinal=precio*0.9;
+ 				default:
+ 				precioFinal=precio*0.95;
+ 				break;
+ 			}
+ 		
  	}
-
 }
 
