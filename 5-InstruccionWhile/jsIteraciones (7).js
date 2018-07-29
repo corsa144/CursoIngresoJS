@@ -9,12 +9,15 @@ function mostrar()
 	{
 		numero=prompt("ingrese numero");
 		numero=parseInt(numero);
-		if(numero=="si")//if(isNAN(numero))
+		
+		if(isNaN(numero))//if(isNAN(numero))
 		{
-			break;
+			continue;
 			//continue;(salta todo el codigo y vulve a la condicion del while)
 		}
-		//respuesta=prompt("mostrar respuesta")
+		contador++;
+		acumulador=numero+acumulador;
+		respuesta=prompt("¿quiere ingresar otro numero?")
 	}
 
 
