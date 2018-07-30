@@ -36,14 +36,14 @@ function mostrar()
 
 	}
 		document.write("cantidad de positivos: "+cantidadDePositivos);
-		document.write("\ncantidad de negativos: "+cantidadDeNegativos);
-		document.write("\ncantidad de ceros: "+cantidadDeCeros);
-		document.write("\ncantidad de pares: "+cantidadDePares);
-		document.write("\nsuma positivos: "+sumaPositivos);
-		document.write("\nsuma negativos: "+sumaNegativos);
-		document.write("\npromedio de positivos: "+sumaPositivos/cantidadDePositivos);
-		document.write("\npromedio de negativos: "+sumaNegativos/cantidadDeNegativos);
-		document.write("\nresta(positivos-negativos): "+(sumaPositivos-sumaNegativos));
+		document.write("<br />cantidad de negativos: "+cantidadDeNegativos);
+		document.write("<br />cantidad de ceros: "+cantidadDeCeros);
+		document.write("<br />cantidad de pares: "+cantidadDePares);
+		document.write("<br />suma positivos: "+sumaPositivos);
+		document.write("<br />suma negativos: "+sumaNegativos);
+		document.write("<br />promedio de positivos: "+sumaPositivos/cantidadDePositivos);
+		document.write("<br />promedio de negativos: "+sumaNegativos/cantidadDeNegativos);
+		document.write("<br />resta(positivos-negativos): "+(sumaPositivos-sumaNegativos));
 
 
 
