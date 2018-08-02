@@ -27,6 +27,13 @@ function mostrar()
 	var cantidadDeHombres=0;
 	var cantidadDeMenores=0;
 	var cantidadDeMayores=0;
+	var edadMaxima=0;
+	var edadMinima=100;
+	var nombreMayor;
+	var nombreMenor;
+	var contadorDeMujeres=0;
+	var edadMaximaFemenina;
+	var nombreFemeninoMasViejo;
 
 
 
@@ -43,7 +50,7 @@ function mostrar()
 				if(sexo=="m")
 				{
 					cantidadDeHombres++;
-				}else
+				}if(sexo=="f")
 				{
 					cantidadDeMujeres++;
 				}
@@ -69,6 +76,35 @@ function mostrar()
 				}else
 				{
 					cantidadDeMayores++;
+				}
+			}
+
+			if(contador==1){
+				edadMaxima=edad;
+				edadMinima=edad;
+				nombreMayor=nombre;
+
+			}else{
+				if(edadMaxima<edad){
+					edadMaxima=edad;
+					nombreMayor=nombre;
+
+					if(sexo=="f")
+					{	
+						contadorDeMujeres++;
+
+						if(edad>edadMaximaFemenina){
+							edadMaximaFemenina=edad;
+							nombreFemeninoMasViejo=nombre;
+						}
+					}
+					
+
+					
+
+				}if(edadMinima>edad){
+					edadMinima=edad;
+					nombreMenor=nombre;
 				}
 			}
 		}
