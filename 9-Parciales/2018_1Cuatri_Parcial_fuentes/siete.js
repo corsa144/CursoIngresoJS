@@ -1,8 +1,9 @@
-/* jose     m       25
+
+
+	/* jose     m       25
  maria      f       16
  jesus      m       33
  fer        f        82
-
  1-cantidad de mujeres=2
  2-cantidad de hombres=2
  3-cantidad de menores de edad=1
@@ -28,16 +29,16 @@ function mostrar()
 	var cantidadDeMayores=0;
 
 
-	
 
-		while(contador<4)
+	while(contador<4)
 		{
 			contador++;
 			nombre=prompt("ingrese nombre valido");
-			
+		
 			sexo=prompt("ingrese sexo valido");
 			while(sexo!="m"&&sexo!="f")
 			{
+
 				sexo=prompt("ingrese sexo valido");
 				if(sexo=="m")
 				{
@@ -50,6 +51,14 @@ function mostrar()
 		
 			edad=prompt("ingrese edad");
 			edad=parseInt(edad);
+				if(edad<18)
+				{
+					cantidadDeMenores++;
+				}else
+				{
+					cantidadDeMayores++;
+				}
+				
 			while(isNaN(edad)||edad<0||edad>100)
 			{
 				edad=prompt("ingrese edad");
@@ -70,3 +79,4 @@ function mostrar()
 		document.write("<br />cantidad de menores de edad son "+ cantidadDeMenores);	
 		
 }
+
