@@ -2,12 +2,13 @@ function mostrar()
 {
 
 	var repeticiones = prompt("ingrese el número de repeticiones");
-	
-	
+	var contador;
+
 	repeticiones=parseInt(repeticiones)
+
 	for(contador=0;contador<repeticiones;contador++)
 	{
-		alert("hola utn fra");
+		console.log("hola utn fra");
 	}
 
 

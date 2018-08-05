@@ -2,18 +2,23 @@ function mostrar()
 {
 
 	var numero;
-	var cantidadDePares;
+	var contador;
+	var cantidadDePares=0;
 
 
 
 	numero=prompt("ingrese numero");
 	numero=parseInt(numero);
 
-	for(contador=0;numero;contador++ )
+	for(contador=0;contador<numero;contador++)
 	{
-		cantidadDePares=(numero-1)/2;
-			alert(cantidadDePares);
+		if ((contador+1)%2==0)
+		{
+			cantidadDePares++;
+			console.log((contador+1)+" es par");
+		}
+		
+		
 	}
-
-
+	console.log("Los pares son "+cantidadDePares);
 }//FIN DE LA FUNCIÓN

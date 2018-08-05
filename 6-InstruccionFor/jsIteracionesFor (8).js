@@ -1,6 +1,61 @@
 function mostrar()
 {
-	var divisores;
+	var numero;
+	var contador;
+	var bandera=true;
+
+	numero=prompt("ingrese numero");
+	numero=parseInt(numero);
+
+	for (contador=numero-1;contador>1;contador--)
+	{
+		if (numero%contador==0)
+		{
+			console.log(numero+" no es primo");
+			bandera=false;
+			break;
+		}
+
+
+	}
+
+	if (bandera==true)
+		{
+			console.log(numero+" es primo");
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*var divisores;
 	var numeroIngresado;
 	var numeroAnterior;
 	var numerosRecorridos;
@@ -26,7 +81,7 @@ function mostrar()
 	}
 
 	}
-
+	*/
 	/*for(numeroAnterior=numeroIngresado-1;numeroAnterior>1;numeroAnterior--)
 	{
 		if(numeroIngresado%numeroAnterior==0)

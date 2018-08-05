@@ -5,10 +5,17 @@ function mostrar()
 	numero=prompt("ingrese numero");
 	numero=parseInt(numero);
 
-	for(contador=1;numero!=9;contador++)
+	for(;;)
 	{
-		alert("no es el numero");
+
+		console.log("no es el numero");
+		
+		if (numero==9)
+		{
+			break;
+		}
 		numero=prompt("ingrese numero");
+		numero=parseInt(numero);
 	}
 
 

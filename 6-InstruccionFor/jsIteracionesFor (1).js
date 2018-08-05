@@ -7,8 +7,10 @@ function mostrar()
 	{
 		console.log(contador);
 		contador++;//4
-		if(contador==5)//3(contador<5)
-		break;
+		if(contador==5)
+		{//3(contador<5)
+			break;
+		}
 	}
 		console.log(contador);
 }
