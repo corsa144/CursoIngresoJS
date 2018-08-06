@@ -8,6 +8,56 @@ function mostrar()
 	{
 		case "mercurio":
 		case "venus":
+			alert("estan mas cerca del sol");
+			break;
+		case "tierra":
+			alert("aca estamos");
+			break;
+		case "marte":
+		case "jupiter":
+		case "saturno":
+		case "urano":
+		case "neptuno":
+			alert("estan mas lejos");
+			break;
+		default:
+		alert("no es un planeta");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*var planeta;
+
+	planeta=prompt("ingrese planeta");
+
+	switch(planeta)
+	{
+		case "mercurio":
+		case "venus":
 			alert("acá hace más calor");
 			break;
 		case "tierra":
@@ -23,5 +73,5 @@ function mostrar()
 		default:
 			alert("no es un planeta valido");
 	}
-
+*/
 }

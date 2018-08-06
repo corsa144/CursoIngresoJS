@@ -21,6 +21,88 @@ function mostrar()
 {
 	var nombre;
 	var sexo;
+	var nota;
+	var contador;
+	var sumaDeNotas=0;
+	var cantidadDeHombresAprobados=0;
+	var notaMinima=10;
+	var sexoNotaMinima;
+
+	for (contador=0;contador<5;contador++)
+	{
+
+		nombre=prompt("ingrese nombre");
+		sexo=prompt("ingrese sexo");
+		
+
+		while(sexo!="m"&&sexo!="f")
+		{
+			sexo=prompt("ingrese sexo");
+		}
+		
+		nota=prompt("ingrese nota");
+		nota=parseInt(nota);
+
+		while(isNaN(nota)||nota<0||nota>10)
+		{
+			nota=prompt("ingrese nota");
+			nota=parseInt(nota);
+		}
+		
+
+		sumaDeNotas=nota+sumaDeNotas;
+
+		if (sexo=="m"&&nota>=6)
+		{
+			cantidadDeHombresAprobados++;
+		}
+		if (nota<notaMinima)
+		{
+			notaMinima=nota;
+			sexoNotaMinima=sexo;
+		}
+
+
+
+
+
+
+	}
+
+		alert("el promedio es "+ (sumaDeNotas/5));
+		alert("la nota mas baja es "+notaMinima+"su sexo es "+sexoNotaMinima);
+		alert("la cantidad de hombres aprobados son "+cantidadDeHombresAprobados);
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*var nombre;
+	var sexo;
 	var edad;
 	var contador=0;
 	var cantidadDeMujeres=0;
@@ -113,6 +195,6 @@ function mostrar()
 		document.write("<br />cantidad de hombres son "+ cantidadDeHombres);
 		document.write("<br />cantidad de mayores de edad son "+ cantidadDeMayores);
 		document.write("<br />cantidad de menores de edad son "+ cantidadDeMenores);	
-		
+	*/	
 }
 
