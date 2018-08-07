@@ -11,7 +11,7 @@ function mostrar()
 	altura=document.getElementById('altura').value;
 	altura=parseInt(altura);
 
-	resultadoSuperficie=base*altura/2;
+	resultadoSuperficie=(base*altura)/2;
 	resultadoPerimetro=base*3;
 
 	alert('El area es '+resultadoSuperficie+'\nEl perimetro es '+resultadoPerimetro);
